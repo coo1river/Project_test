@@ -1,0 +1,154 @@
+/* reset. css */
+body,
+h1,
+h2,
+h3,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* reset. css */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  height: 100vh;
+  background: var(
+    --gradient2,
+    radial-gradient(293.21% 130.49% at 3.59% 5.28%, #f0f4ff 0%, #a5b6ee 100%)
+  );
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 400px;
+  height: 360px;
+  border-radius: 16px;
+  background: var(
+    --gradient,
+    linear-gradient(144deg, #5572bb 2.13%, #374b7c 102.97%)
+  );
+  /* shadow */
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+}
+
+.timer_tit {
+  text-align: center;
+  padding-bottom: 23px;
+  width: 312px;
+  margin-top: 40px;
+  border-bottom: 2px solid #3d538a;
+  box-shadow: 0px 2px 0 0px #5b75b4;
+
+  font-size: 24px;
+}
+
+.timer_time {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--light, #a5b6ee);
+}
+
+.get_time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 4px 9px 0 9px;
+
+  text-align: right;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  background-image: url("/images/box.png");
+}
+
+.get_time:hover {
+  cursor: pointer;
+}
+
+.dot {
+  margin-top: 20px;
+}
+
+.btn_start {
+  width: 112px;
+  height: 48px;
+  background-image: url("/images/start-disabled.png");
+}
+
+.btn_start:active {
+  background-image: url("/images/start-default.png");
+}
+
+.btn_reset {
+  width: 112px;
+  height: 48px;
+  background-image: url("/images/reset-disabled.png");
+}
+
+.btn_reset:active {
+  background-image: url("/images/reset-default.png");
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 60px;
+  font-size: 14px;
+  color: #8596bf;
+}
